@@ -7,17 +7,56 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #f2dede; /* Pudrowy róż */
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
+            align-items: flex-start; /* Zaczyna od góry */
         }
+
         .password-container {
             text-align: center;
+            margin-top: 20px;
         }
+
         .hidden-content {
             display: none;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        .hidden-content h1:first-of-type {
+            font-size: 2.5rem; /* Zwiększenie rozmiaru pierwszego nagłówka */
+        }
+
+        .hidden-content h1:nth-of-type(2) {
+            font-size: 1.8rem; /* Zmniejszenie drugiego nagłówka */
+        }
+
+        .hidden-content p {
+            text-align: justify; /* Wyrównanie tekstu */
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 18px;
+        }
+
+        .image-section {
+            margin: 20px 0; /* Przerwy między sekcjami z obrazami */
+        }
+
+        .image-section p {
+            text-align: center; /* Wyśrodkowanie podpisów */
+            margin-bottom: 10px; /* Przerwa między tekstem a obrazem */
+        }
+
+        .image-section img {
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 20px; /* Przerwa między obrazem a następnym tekstem */
         }
     </style>
 </head>
@@ -29,8 +68,25 @@
     </div>
 
     <div class="hidden-content" id="protectedContent">
-        <h1>Witamy na zabezpieczonej stronie!</h1>
-        <p>Tutaj znajduje się treść widoczna po wpisaniu prawidłowego hasła.</p>
+        <h1>Kiniu kochana!</h1>
+        <p>Chciałabym prosić Cię, abyś przebaczyła mi wszystko, to jak Cię potraktowałem i to, że może nie zawsze potrafiłem odwzajemnić uczucie, którym Ty mnie obdarowałaś. Teraz wiem, że ta decyzja i moje zachowanie było największym błędem mojego życia. Zdałem sobie sprawę, że straciłem najważniejszą osobę w moim życiu, na którą co by się nie działo mogłem liczyć. Zawsze byłaś dla mnie, a ja tego nie potrafiłem docenić. Wiem, że kilka razy nadszarpnąłem Twojego zaufania i to może przez to jest Ci trudno dać mi ostatnią szansę. Zdaje sobie też sprawę, że nigdy nie chciałaś być w związku na odległość. Chciałbym mieć możliwość pokazania, że ta odległość nie będzie aż tak odczuwalna. A jak tylko skończymy pierwszy stopień to zrobimy wszystko, aby móc zamieszkać razem, później wziąć ślub, zbudować dom pełen ciepłej i rodzinnej atmosfery, w którym miłość będzie najważniejsza.</p>
+
+        <h1>Moim marzeniem jest:</h1>
+
+        <div class="image-section">
+            <p>Abyśmy jeszcze nie raz w ten sposób mogli patrzeć sobie prosto w oczy.</p>
+            <img src="https://raw.githubusercontent.com/luc0o0/moja_strona/refs/heads/main/15863.jpg" alt="Opis obrazu" width="400">
+        </div>
+
+        <div class="image-section">
+            <p>Abyśmy jeszcze nie raz w ten sposób mogli cieszyć się swoim towarzystwem.</p>
+            <img src="https://raw.githubusercontent.com/luc0o0/moja_strona/refs/heads/main/IMG_6496.JPG" alt="Opis obrazu" width="400">
+        </div>
+
+        <div class="image-section">
+            <p>Abyśmy jeszcze nie raz w ten sposób mogli zapozować, tylko że z naszymi dziećmi.</p>
+            <img src="https://raw.githubusercontent.com/luc0o0/moja_strona/refs/heads/main/IMG_9231.jpg" alt="Opis obrazu" width="400">
+        </div>
     </div>
 
     <script>
@@ -47,3 +103,4 @@
     </script>
 </body>
 </html>
+

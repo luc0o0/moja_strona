@@ -27,8 +27,10 @@
             width: 100%;
             max-width: 800px; /* Ograniczenie szerokości treści */
             padding: 20px; /* Dodanie paddingu, aby nie zaczynało się od krawędzi */
+            margin: 0 auto; /* Wyśrodkowanie treści */
             text-align: center;
             color: #333;
+            box-sizing: border-box; /* Zabezpieczenie, aby padding działał poprawnie */
         }
 
         .hidden-content h1:first-of-type {
@@ -60,6 +62,17 @@
             margin: 0 auto;
             padding-bottom: 20px; /* Przerwa między obrazem a następnym tekstem */
         }
+
+        @media (max-width: 768px) {
+            /* Na mniejszych ekranach, jak telefony */
+            .hidden-content {
+                padding: 20px; /* Większe odstępy na małych ekranach */
+            }
+
+            .image-section img {
+                max-width: 90%; /* Zmniejszanie obrazów, by lepiej pasowały na telefonach */
+            }
+        }
     </style>
 </head>
 <body>
@@ -85,22 +98,22 @@
             <img src="https://raw.githubusercontent.com/luc0o0/moja_strona/refs/heads/main/IMG_6496.JPG" alt="Opis obrazu" width="400">
         </div>
 
-<div class="image-section">
+        <div class="image-section">
             <p>Abyśmy jeszcze nie raz mogli razem pojechać na kajaki.</p>
             <img src="https://raw.githubusercontent.com/luc0o0/moja_strona/refs/heads/main/18406.JPEG" alt="Opis obrazu" width="400">
         </div>
 
-<div class="image-section">
+        <div class="image-section">
             <p>Abyśmy jeszcze nie raz mogli razem pospacerować.</p>
             <img src="https://raw.githubusercontent.com/luc0o0/moja_strona/refs/heads/main/16492.JPEG" width="400">
         </div>
 
-<div class="image-section">
+        <div class="image-section">
             <p>Abyśmy jeszcze nie raz mogli razem zatańczyć.</p>
             <img src="https://raw.githubusercontent.com/luc0o0/moja_strona/refs/heads/main/18508.JPG" alt="Opis obrazu" width="400">
         </div>
 
-<div class="image-section">
+        <div class="image-section">
             <p>Abyśmy jeszcze nie raz mogli razem pojechać na jakiś wyjazd.</p>
             <img src="https://raw.githubusercontent.com/luc0o0/moja_strona/refs/heads/main/17578.JPG" alt="Opis obrazu" width="400">
         </div>

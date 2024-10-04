@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona z hasłem</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .password-container {
+            text-align: center;
+        }
+        .hidden-content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="password-container">
+        <h1>Wprowadź hasło</h1>
+        <input type="password" id="password" placeholder="Hasło">
+        <button onclick="checkPassword()">Zatwierdź</button>
+    </div>
+
+    <div class="hidden-content" id="protectedContent">
+        <h1>Witamy na zabezpieczonej stronie!</h1>
+        <p>Tutaj znajduje się treść widoczna po wpisaniu prawidłowego hasła.</p>
+    </div>
+
+    <script>
+        function checkPassword() {
+            const password = document.getElementById('password').value;
+            const correctPassword = 'kocham_cie';  // Ustaw swoje hasło tutaj
+            if (password === correctPassword) {
+                document.querySelector('.password-container').style.display = 'none';
+                document.getElementById('protectedContent').style.display = 'block';
+            } else {
+                alert('Nieprawidłowe hasło');
+            }
+        }
+    </script>
+</body>
+</html>
